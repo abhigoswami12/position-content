@@ -59,7 +59,7 @@ body{
     clear: both;
 }
 .container{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 *{
@@ -94,7 +94,7 @@ body{
     padding: 40px 0;
 }
 .col{
-    width: 570px;
+    width: 50%;
 }
 .col1{
     float: left;
