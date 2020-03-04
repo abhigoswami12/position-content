@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>pair-programming</title>
+        <link rel="stylesheet" href="assets/stylesheet/main.css">
+        <!-- font-family -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            <h1>Side-By-Side Positioning Demo</h1>
+        </div>
+        </header>
+        <main>
+            <article class="container">
+                <!-- using inline-block -->
+                <div class="col">
+                    <p>These two divs are placed next to one another using display: inline-block;</p>
+                </div>
+                <div class="col">
+                    <p>
+                        Notice the space between them.It occurs because of my carriage return in the HTML which i=I have used to keep the code organized. I have used a reset to insure no elements should have any default margins or padding.(I did a bottom margin to make it easier to read).This space is actually a space character rendered just as it would be between two inline elements.
+                    </p>
+                </div>
+                <!-- using float -->
+                <div class="clearfix">
+                    <div class="float-col float-col1">
+                    <p>These two are positioned using float: left;</p> 
+                    </div>
+                    <div class="float-col float-col2">
+                        <p>you can see that even though the elements are spaced in the code,the space is not actually rendered on the page.This may not be a huge deal in these first examples, but...</p>
+                    </div>
+                </div>
+                <!-- using inline-bock with width 50% -->
+                <div class="col ibcol1">
+                    <p>What if I want my side by side elements to take up the full width of the parent element?I can get the width of each to 50%,right?</p>
+                </div>
+                <div class="col ibcol1">
+                    <p>Wrong!Beacause,together the two inline block elements will add up to 100% of the available width,but that doesn,t account for the space between.</p>
+                </div>
+                <!-- using float with width 50% -->
+                <div class="clearfix">
+                    <div class="float-col float-col1 float-col3">
+                        <p>If I do the same thing with floated elements...</p>
+                    </div>
+                    <div class="float-col float-col2 float-col3">
+                        <p>The two elements are side by side just as I intended and fill the entire width of the parent(which,in this case,is the same as the width of the viewpoint.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
