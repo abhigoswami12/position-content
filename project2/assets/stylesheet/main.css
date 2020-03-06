@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general */
+*{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Spartan', sans-serif;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.padding{
+    padding: 100px 0;
+}
+
+/* header */
+.header{
+    background: #5385C1;
+    line-height: 36px;
+    padding-top: 60px;
+}
+.logo{
+    color: rgb(231, 222, 222);
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+    font-weight: bold;
+    
+}
+.nav-menu{
+    float: right;
+}
+.nav-menu a{
+    color: rgb(231, 222, 222);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* hero */
+.hero{
+    background: #5385C1;
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+.hero-heading{
+    font-size: 44px;
+    color: #FCFDFE;
+    text-align: center;
+    
+    font-weight: 300;
+}
+.hero-para{
+    color: #86A8D3;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* primary */
+.prim-col{
+    width:30%;
+    float: left;
+}
+.prim-margin{
+    margin: 0 5%;
+}
+.prim-heading{
+    font-size: 24px;
+    color: rgb(76, 128, 190);
+    /* padding-top: 10px; */
+   
+}
+.prim-para{
+    color: #AEAEAE;
+    padding: 20px 0;
+}
+.btn{
+    background: #5385C1;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: 1px solid #5385C1;
+    cursor: pointer;
+}
+/* secondary */
+.secondary{
+    background: #5385C1;
+}
+.second-heading{
+    font-size: 36px;
+    color: #E4ECF5;
+    text-align: center;
+    font-weight:lighter;
+}
+.second-para{
+    color: #99B5D9;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 8px;
+}
+.second-col{
+    width: 20%;
+    float: left;
+    border: 1px solid rgb(228, 222, 222);
+    padding: 40px 40px;
+    margin: 0 2.5%;
+}
+.img{
+    font-size: 0;
+}
+.img img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.img-heading{
+    font-size: 24px;
+    color: #E4ECF5;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.img-para{
+    color: #9AB6DA;
+    text-align: center;
+}
+
+/* tertiary */
+.tert-col{
+    width: 50%;
+    float: left;
+}
+.tert-col1{
+    padding-right: 30px;
+}
+.tert-col2{
+    padding-left: 30px;
+}
+.tert-heading{
+    text-align: center;
+    color: #5C8AC4;
+    font-size: 36px;
+}
+.tert-para{
+    text-align: center;
+    color: #CBCBCB;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.tert-col img{
+    width: 100%;
+}
+/* footer */
+.footer{
+    padding: 30px 0;
+}
+.line{
+   border: 1px solid rgb(182, 178, 178); 
+   margin: 40px 0;
+}
+.small{
+    font-size: 12px;
+    color: rgb(155, 151, 151);
+    float: left;
+}
+.fa-facebook, fa-twitter, fa-linkedin,
+fa-pinterest, fa-vimeo{
+    color: #5385C1;
+}
+.nav-footer{
+    float: right;
+}
+.nav-footer a{
+    text-decoration: none;
+}
